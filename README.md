@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# 👤 User Profile Analyzer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based web app that allows users to analyze any GitHub profile by simply entering a username. View public repositories, bio info, and GitHub activity at a glance — all beautifully styled with TailwindCSS and ShadCN UI.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔍 GitHub user search with live data
+- 📂 Lists public repositories with language and star info
+- 📊 GitHub activity visualization (optional)
+- 💡 Clean and responsive UI with TailwindCSS + ShadCN
+- ⚡ Built with React 19, TypeScript, and Vite
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
+## 🛠️ Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- **Frontend:** React 19 + TypeScript + Vite
+- **Styling:** TailwindCSS + ShadCN UI
+- **API:** GitHub REST API
+- **Icons:** Lucide-react
+
+---
+
+## ⚙️ Installation
+
+Clone the repo and install dependencies:
+
+```bash
+git clone https://github.com/Mayank-Pandey-Ji/User-Profile-Analyzer.git
+cd User-Profile-Analyzer
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🚀 Deployment Guide
+You can easily deploy this project using Vercel:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Steps to Deploy on Vercel:
+Login to Vercel
+Go to vercel.com and log in with your GitHub account.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Import Project
+
+Click on "Add New Project"
+
+Select the User-Profile-Analyzer repository
+
+Configure Build Settings
+
+Framework Preset: React (or default)
+
+Build Command: npm run build
+
+Output Directory: dist
+
+Deploy!
+Click Deploy and your project will be live shortly 🚀
+
+
